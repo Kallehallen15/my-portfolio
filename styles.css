@@ -1,246 +1,135 @@
-/* General Styles */
-* {
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-image: url('https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #121212;
     color: #fff;
-    line-height: 1.6;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Hero Section */
-header {
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero {
+    background-image: url('https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
     text-align: center;
-    padding: 20px;
-    position: relative;
+    color: white;
 }
 
-header h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 25px #ff0099, 0 0 5px #ff0099;
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
 }
 
-header p {
+.hero-text p {
     font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7), 0 0 25px #ff0099, 0 0 5px #ff0099;
+    margin: 10px 0;
 }
 
-.cta-button {
-    padding: 12px 30px;
+.cta-btn {
     background-color: #ff00ff;
     color: white;
-    text-transform: uppercase;
+    padding: 15px 30px;
     font-size: 1.2rem;
-    border: 2px solid #ff00ff;
     border-radius: 30px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
-.cta-button:hover {
+.cta-btn:hover {
     background-color: #00ffff;
-    border-color: #00ffff;
-    box-shadow: 0 0 15px #00ffff, 0 0 20px #ff0099;
 }
 
 /* About Section */
-#about {
-    background-color: rgba(34, 34, 34, 0.8); /* Dark overlay for contrast */
-    padding: 60px 20px;
+.about {
+    background-color: #1a1a1a;
+    padding: 50px 20px;
     text-align: center;
 }
 
-#about h2 {
+.about h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #00ffff;
 }
 
-#about p {
+.about p {
     font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #ccc;
+    margin-top: 20px;
+    line-height: 1.6;
 }
 
 /* Projects Section */
-#projects {
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
-    padding: 60px 20px;
+.projects {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-#projects h2 {
+.projects h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #ff00ff;
 }
 
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background-color: #444;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7), 0 0 25px #ff0099;
+.project-card {
+    background-color: #333;
     padding: 20px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff;
-}
-
-.project h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+.project-card h3 a {
     color: #ff00ff;
-}
-
-.project p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #ccc;
-}
-
-.project-link {
-    padding: 10px 20px;
-    background-color: #00ffff;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 30px;
-    font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 1.5rem;
 }
 
-.project-link:hover {
-    background-color: #ff00ff;
-    box-shadow: 0 0 15px #ff00ff;
+.project-card p {
+    font-size: 1rem;
+    color: #bbb;
 }
 
 /* Contact Section */
-#contact {
-    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
-    padding: 60px 20px;
-    color: #fff;
+.contact {
+    background-color: #222;
+    padding: 50px 20px;
     text-align: center;
 }
 
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #ff00ff;
-}
-
-#contact p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #ccc;
-}
-
-.contact-form {
+.contact form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #333;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), 0 0 20px #ff0099;
 }
 
-.contact-form label {
-    font-size: 1.1rem;
-    display: block;
-    margin-bottom: 8px;
-    text-align: left;
-    color: #ff00ff;
-}
-
-.contact-form input,
-.contact-form textarea {
+.contact input, .contact textarea {
     width: 100%;
-    padding: 14px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 2px solid #444;
-    background-color: #444;
-    color: #fff;
-    font-size: 1rem;
-    transition: border-color 0.3s, background-color 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #ff00ff;
-    background-color: #222;
-    outline: none;
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-.submit-button {
-    padding: 15px 30px;
-    background-color: #ff00ff;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
     color: white;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    border: 2px solid #ff00ff;
+}
+
+.submit-btn {
+    background-color: #ff00ff;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
     border-radius: 30px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.submit-button:hover {
+.submit-btn:hover {
     background-color: #00ffff;
-    border-color: #00ffff;
-    box-shadow: 0 0 15px #00ffff, 0 0 20px #ff0099;
-}
-
-.submit-button:active {
-    background-color: #ff00ff;
-    border-color: #ff00ff;
-    box-shadow: 0 0 10px #ff00ff;
 }
 
 /* Footer Section */
 footer {
-    background-color: #121212; /* Dark background */
+    background-color: #121212;
     padding: 50px 20px;
-    color: #fff;
     text-align: center;
-    font-size: 1.1rem;
+    color: #fff;
     border-top: 2px solid #333;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer .container {
@@ -250,49 +139,39 @@ footer .container {
 
 footer p {
     margin: 10px 0;
-    color: #bbb;
 }
 
-footer a {
-    color: #ff00ff; /* Neon pink */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
-}
-
-footer a:hover {
-    color: #00ffff; /* Cyan color on hover */
-    text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff00ff;
-    transform: scale(1.05);
-}
-
-footer .contact-link {
-    color: #ff00ff;
-    text-decoration: underline;
-}
-
-footer .tiktok-link {
+footer .social-icon {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
-    padding: 12px 25px;
-    background-color: #ff00ff; /* Neon pink background */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #444;
     color: #fff;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    border-radius: 30px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
-    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    font-size: 1.8rem;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-footer .tiktok-link:hover {
-    background-color: #00ffff;
-    box-shadow: 0 0 25px #00ffff, 0 0 35px #ff00ff;
-    transform: scale(1.05);
+footer .social-icon:hover {
+    background-color: #ff00ff;
+    transform: scale(1.1);
 }
 
-footer .tiktok-link i {
-    margin-right: 10px;
-    font-size: 1.5rem;
+footer .social-icon i {
+    font-size: 1.8rem;
+}
+
+footer .instagram {
+    background-color: #e4405f;
+}
+
+footer .linkedin {
+    background-color: #0077b5;
+}
+
+footer .facebook {
+    background-color: #3b5998;
 }
