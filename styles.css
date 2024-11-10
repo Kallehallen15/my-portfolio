@@ -237,64 +237,67 @@ header p {
 }
 /* Footer Section */
 footer {
-    background-color: #1a1a1a;
-    padding: 40px 20px;
+    background-color: #121212; /* Dark background to match cyberpunk theme */
+    padding: 50px 20px;
     color: #fff;
     text-align: center;
-    font-size: 1rem;
-    border-top: 2px solid #444;
+    font-size: 1.1rem;
+    border-top: 2px solid #333;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 footer .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 footer p {
     margin: 10px 0;
-    color: #ccc;
+    color: #bbb; /* Lighter grey for text to maintain a sleek look */
 }
 
 footer a {
-    color: #ff00ff;
+    color: #ff00ff; /* Neon pink */
     text-decoration: none;
-    transition: color 0.3s, text-shadow 0.3s;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
 }
 
 footer a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff0099;
+    color: #00ffff; /* Cyan color on hover */
+    text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff00ff;
+    transform: scale(1.05); /* Subtle hover scaling effect */
 }
 
 footer .contact-link {
     color: #ff00ff;
-    font-weight: bold;
     text-decoration: underline;
-    font-size: 1.1rem;
 }
 
 footer .tiktok-link {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #ff00ff;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: #ff00ff; /* Neon pink background */
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 30px;
     font-weight: bold;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    margin-top: 10px;
+    margin-top: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
 footer .tiktok-link:hover {
-    background-color: #00ffff;
-    box-shadow: 0 0 15px #00ffff, 0 0 20px #ff0099;
+    background-color: #00ffff; /* Cyan on hover */
+    box-shadow: 0 0 25px #00ffff, 0 0 35px #ff00ff;
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 footer .tiktok-link i {
-    margin-right: 8px;
+    margin-right: 10px; /* Space between icon and text */
     font-size: 1.5rem;
 }
