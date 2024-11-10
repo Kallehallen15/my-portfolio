@@ -23,7 +23,7 @@ html {
 /* Hero Section */
 header {
     height: 100vh;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay to make text more readable */
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +64,7 @@ header p {
 
 /* About Section */
 #about {
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.8); /* Dark overlay for contrast */
     padding: 60px 20px;
     text-align: center;
 }
@@ -84,7 +84,7 @@ header p {
 
 /* Projects Section */
 #projects {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
     padding: 60px 20px;
 }
 
@@ -145,7 +145,7 @@ header p {
 
 /* Contact Section */
 #contact {
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
     padding: 60px 20px;
     color: #fff;
     text-align: center;
