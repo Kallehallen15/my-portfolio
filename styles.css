@@ -58,35 +58,99 @@ body {
     margin-top: 20px;
     line-height: 1.6;
 }
-
 /* Projects Section */
 .projects {
     padding: 50px 20px;
     text-align: center;
+    background-color: #1a1a1a;
 }
 
 .projects h2 {
     font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff00ff;
 }
 
 .project-card {
-    background-color: #333;
+    background-color: #2a2a2a;
     padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 255, 0.5);
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    color: #ff00ff;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .project-card h3 a {
     color: #ff00ff;
     text-decoration: none;
-    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.project-card h3 a:hover {
+    color: #00ffff;
 }
 
 .project-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #bbb;
+    line-height: 1.6;
 }
+
+.project-card .view-project-btn {
+    background-color: #00ffff;
+    color: black;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .view-project-btn:hover {
+    background-color: #ff00ff;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-card p {
+        font-size: 1rem;
+    }
+
+    .project-card .view-project-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Contact Section */
 .contact {
