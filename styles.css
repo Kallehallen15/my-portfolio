@@ -7,9 +7,14 @@
 }
 
 body {
-    background-color: #1a1a1a; /* Dark background for cyberpunk feel */
+    background-color: #1a1a1a;
     color: #fff;
     line-height: 1.6;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Hero Section */
@@ -29,7 +34,7 @@ header {
 header h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 25px #ff0099, 0 0 5px #ff0099; /* Neon glow effect */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 25px #ff0099, 0 0 5px #ff0099;
 }
 
 header p {
@@ -40,24 +45,24 @@ header p {
 
 .cta-button {
     padding: 12px 30px;
-    background-color: #ff00ff; /* Neon pink */
+    background-color: #ff00ff;
     color: white;
     text-transform: uppercase;
     font-size: 1.2rem;
-    border: 2px solid #ff00ff; /* Glowing border */
+    border: 2px solid #ff00ff;
     border-radius: 30px;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #00ffff; /* Cyan blue */
+    background-color: #00ffff;
     border-color: #00ffff;
     box-shadow: 0 0 15px #00ffff, 0 0 20px #ff00ff;
 }
 
 /* About Section */
 #about {
-    background-color: #222; /* Dark background for contrast */
+    background-color: #222;
     padding: 60px 20px;
     text-align: center;
 }
@@ -65,19 +70,19 @@ header p {
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #00ffff; /* Neon blue */
+    color: #00ffff;
 }
 
 #about p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #ccc; /* Light grey for text */
+    color: #ccc;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #333; /* Dark background for contrast */
+    background-color: #333;
     padding: 60px 20px;
 }
 
@@ -85,7 +90,7 @@ header p {
     font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
-    color: #ff00ff; /* Neon pink */
+    color: #ff00ff;
 }
 
 .project-list {
@@ -95,9 +100,9 @@ header p {
 }
 
 .project {
-    background-color: #444; /* Dark card background */
+    background-color: #444;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7), 0 0 25px #ff0099; /* Glowing effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7), 0 0 25px #ff0099;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -105,24 +110,24 @@ header p {
 
 .project:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff; /* Glowing effect on hover */
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff;
 }
 
 .project h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #ff00ff; /* Neon pink */
+    color: #ff00ff;
 }
 
 .project p {
     font-size: 1rem;
     margin-bottom: 15px;
-    color: #ccc; /* Light grey for text */
+    color: #ccc;
 }
 
 .project-link {
     padding: 10px 20px;
-    background-color: #00ffff; /* Cyan blue */
+    background-color: #00ffff;
     color: white;
     text-transform: uppercase;
     border-radius: 30px;
@@ -132,23 +137,46 @@ header p {
 }
 
 .project-link:hover {
-    background-color: #ff00ff; /* Neon pink */
+    background-color: #ff00ff;
     box-shadow: 0 0 15px #ff00ff;
 }
 
-/* Footer */
-footer {
-    background-color: #222; /* Dark background */
+/* Contact Section */
+#contact {
+    background-color: #222;
+    padding: 60px 20px;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
 }
 
-footer a {
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: #ff00ff;
-    text-decoration: none;
 }
 
-footer a:hover {
-    color: #00ffff;
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
 }
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), 0 0 20px #ff0099;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #ff00ff;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100
