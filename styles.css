@@ -7,7 +7,10 @@
 }
 
 body {
-    background-color: #1a1a1a;
+    background-image: url('https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     line-height: 1.6;
 }
@@ -20,13 +23,12 @@ html {
 /* Hero Section */
 header {
     height: 100vh;
-    background: url('https://source.unsplash.com/1600x900/?city,neon') no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay to make text more readable */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
     padding: 20px;
     position: relative;
 }
@@ -57,7 +59,7 @@ header p {
 .cta-button:hover {
     background-color: #00ffff;
     border-color: #00ffff;
-    box-shadow: 0 0 15px #00ffff, 0 0 20px #ff00ff;
+    box-shadow: 0 0 15px #00ffff, 0 0 20px #ff0099;
 }
 
 /* About Section */
@@ -144,7 +146,7 @@ header p {
 /* Contact Section */
 #contact {
     background-color: #222;
-    padding: 80px 20px;
+    padding: 60px 20px;
     color: #fff;
     text-align: center;
 }
@@ -153,7 +155,6 @@ header p {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #ff00ff;
-    font-weight: bold;
 }
 
 #contact p {
@@ -162,20 +163,13 @@ header p {
     color: #ccc;
 }
 
-/* Contact Form */
 .contact-form {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #333;
-    padding: 40px;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), 0 0 30px #ff0099;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.contact-form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px #ff00ff, 0 0 40px #ff0099;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), 0 0 20px #ff0099;
 }
 
 .contact-form label {
@@ -235,9 +229,10 @@ header p {
     border-color: #ff00ff;
     box-shadow: 0 0 10px #ff00ff;
 }
+
 /* Footer Section */
 footer {
-    background-color: #121212; /* Dark background to match cyberpunk theme */
+    background-color: #121212; /* Dark background */
     padding: 50px 20px;
     color: #fff;
     text-align: center;
@@ -255,7 +250,7 @@ footer .container {
 
 footer p {
     margin: 10px 0;
-    color: #bbb; /* Lighter grey for text to maintain a sleek look */
+    color: #bbb;
 }
 
 footer a {
@@ -268,7 +263,7 @@ footer a {
 footer a:hover {
     color: #00ffff; /* Cyan color on hover */
     text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff00ff;
-    transform: scale(1.05); /* Subtle hover scaling effect */
+    transform: scale(1.05);
 }
 
 footer .contact-link {
@@ -292,12 +287,12 @@ footer .tiktok-link {
 }
 
 footer .tiktok-link:hover {
-    background-color: #00ffff; /* Cyan on hover */
+    background-color: #00ffff;
     box-shadow: 0 0 25px #00ffff, 0 0 35px #ff00ff;
-    transform: scale(1.05); /* Slight scale effect on hover */
+    transform: scale(1.05);
 }
 
 footer .tiktok-link i {
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px;
     font-size: 1.5rem;
 }
