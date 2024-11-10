@@ -3,88 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kallehallen15 - GitHub Developer Portfolio">
-    <title>Kallehallen15 - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Kallehallen15 Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Hero Section -->
-    <header>
-        <h1>Welcome to Kallehallen15's Portfolio</h1>
-        <p>Explore my GitHub projects and connect with me</p>
-        <!-- Button to scroll to About Section -->
-        <a href="#about" class="cta-button">Learn More About Me</a>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my projects and get to know me!</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+        </div>
     </header>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Kallehallen15, a passionate developer with a focus on embedded systems, web security, and machine learning. Feel free to explore my projects!</p>
+            <p>Hi! I'm Kallehallen15, a passionate developer with a love for creating and exploring new technologies. I specialize in building innovative and useful projects. Welcome to my world!</p>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>ESD (esp-web-tool, serial-terminal, duckify)</h3>
-                    <p>A comprehensive project consisting of three tools: <strong>esp-web-tool</strong> for managing ESP32 devices over the web, <strong>serial-terminal</strong> for serial communication, and <strong>duckify</strong> for automating tasks.</p>
-                    <a href="https://github.com/Kallehallen15/ESD" target="_blank" class="project-link">View on GitHub</a>
-                </div>
-                <!-- Add more projects here -->
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <h3><a href="https://github.com/Kallehallen15/ESD" target="_blank">ESD - ESP Web Tool</a></h3>
+                <p>An embedded toolset for web-based interaction with ESP32 devices.</p>
             </div>
+            <!-- Add more projects as needed -->
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>If you have any questions or just want to connect, feel free to drop me a message below.</p>
-            <!-- Form Start -->
-            <form action="https://formspree.io/f/mbljylow" method="POST" class="contact-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-
-                <button type="submit" class="submit-button">Send Message</button>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
             </form>
-            <!-- Form End -->
         </div>
     </section>
-<footer>
-    <div class="container">
-        <p>Created by Kallehallen15 | <a href="#contact" class="contact-link">Contact Me</a></p>
-        <p>Follow me on: 
-            <a href="https://www.tiktok.com/@ttn370" class="tiktok-link" target="_blank">
-                <i class="fab fa-tiktok"></i> TikTok
-            </a>
-            |
-            <a href="https://www.youtube.com/@mintunnaingchannel4521" class="youtube-link" target="_blank">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
-            |
-            <a href="https://www.instagram.com/mttn006/" class="social-icon instagram" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/min-tun-naing-2b8130337/" class="social-icon linkedin" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/mttn006" class="social-icon facebook" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-        </p>
-    </div>
-</footer>
 
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Created by Kallehallen15 | <a href="#contact" class="contact-link">Contact Me</a></p>
+            <p>Follow me on: 
+                <a href="https://www.tiktok.com/@ttn370" class="tiktok-link" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                |
+                <a href="https://www.youtube.com/@mintunnaingchannel4521" class="youtube-link" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                |
+                <a href="https://www.instagram.com/mttn006/" class="social-icon instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/min-tun-naing-2b8130337/" class="social-icon linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/mttn006" class="social-icon facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
