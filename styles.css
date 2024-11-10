@@ -1,115 +1,97 @@
-/* Basic Styles */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #0f0f0f;
+    color: #00ff00; /* Classic hacker green */
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #fff;
-}
-
-/* Hero Section */
-.hero {
-    background-image: url('https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 150px 20px;
-    text-align: center;
-    color: white;
-}
-
-.hero-text h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.hero-text p {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.cta-btn {
-    background-color: #ff00ff;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-.cta-btn:hover {
-    background-color: #00ffff;
-}
-
-/* About Section */
-.about {
-    background-color: #1a1a1a;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-}
-
-.about p {
-    font-size: 1.2rem;
-    margin-top: 20px;
     line-height: 1.6;
 }
-/* Projects Section */
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Project Section */
 .projects {
     padding: 50px 20px;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: #0f0f0f;
+    border-top: 2px solid #00ff00;
 }
 
 .projects h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #ff00ff;
+    color: #00ff00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
 }
 
+/* Project Cards */
 .project-card {
-    background-color: #2a2a2a;
+    background-color: #1a1a1a;
     padding: 20px;
     margin: 20px 0;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
+.project-card::before {
+    content: 'HACKING...';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    color: #00ff00;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+/* Hover Effects for Project Cards */
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(255, 0, 255, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1);
 }
 
 .project-card h3 {
     font-size: 1.8rem;
-    color: #ff00ff;
+    color: #00ff00;
     margin-bottom: 10px;
     font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 .project-card h3 a {
-    color: #ff00ff;
+    color: #00ff00;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-card h3 a:hover {
-    color: #00ffff;
+    color: #ff00ff;
 }
 
+/* Project Description */
 .project-card p {
     font-size: 1.1rem;
-    color: #bbb;
+    color: #b4b4b4;
     line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
 }
 
+/* View Project Button */
 .project-card .view-project-btn {
-    background-color: #00ffff;
+    background-color: #00ff00;
     color: black;
     padding: 12px 20px;
     font-size: 1rem;
@@ -123,7 +105,40 @@ body {
 .project-card .view-project-btn:hover {
     background-color: #ff00ff;
     color: white;
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+}
+
+/* Terminal Effect */
+.project-card h3 a::after {
+    content: ' \2192'; /* Right arrow */
+    font-size: 1.2rem;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.project-card h3 a:hover::after {
+    opacity: 1;
+}
+
+/* Glitch effect */
+@keyframes glitch {
+    0% {
+        text-shadow: 1px 1px 2px #ff0000, -1px -1px 5px #00ff00;
+        transform: translate(0, 0);
+    }
+    50% {
+        text-shadow: -1px -1px 2px #ff0000, 1px 1px 5px #00ff00;
+        transform: translate(-2px, -2px);
+    }
+    100% {
+        text-shadow: 1px 1px 2px #ff0000, -1px -1px 5px #00ff00;
+        transform: translate(0, 0);
+    }
+}
+
+.project-card h3 a {
+    animation: glitch 1.5s infinite;
 }
 
 /* Additional Styles for Responsiveness */
@@ -149,93 +164,4 @@ body {
         padding: 10px 15px;
         font-size: 0.9rem;
     }
-}
-
-
-/* Contact Section */
-.contact {
-    background-color: #222;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-}
-
-.submit-btn {
-    background-color: #ff00ff;
-    padding: 15px 30px;
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background-color: #00ffff;
-}
-
-/* Footer Section */
-footer {
-    background-color: #121212;
-    padding: 50px 20px;
-    text-align: center;
-    color: #fff;
-    border-top: 2px solid #333;
-}
-
-footer .container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer .social-icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0 10px;
-    background-color: #444;
-    color: #fff;
-    font-size: 1.8rem;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-footer .social-icon:hover {
-    background-color: #ff00ff;
-    transform: scale(1.1);
-}
-
-footer .social-icon i {
-    font-size: 1.8rem;
-}
-
-footer .instagram {
-    background-color: #e4405f;
-}
-
-footer .linkedin {
-    background-color: #0077b5;
-}
-
-footer .facebook {
-    background-color: #3b5998;
 }
