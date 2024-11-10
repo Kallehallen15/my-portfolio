@@ -153,4 +153,116 @@ body {
 /* Project Description */
 .project-card p {
     font-size: 1.1rem;
-    color: #
+    color: #b4b4b4;
+}
+
+/* View Project Button */
+.view-project-btn {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+    background-color: #ff00ff;
+}
+
+/* Contact Me Section */
+#contact {
+    background-color: #0f0f0f;
+    color: #00ff00;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid #00ff00;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #00ff00;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #b4b4b4;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    border: 2px solid #00ff00;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #0f0f0f;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+    outline: none;
+}
+
+/* Submit Button */
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #ff00ff;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+}
+
+/* Social Media Links */
+.contact-social a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.8rem;
+    color: #00ff00;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-social a:hover {
+    background-color: #00ff00;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
