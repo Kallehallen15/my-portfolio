@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    background-color: #0f0f0f;
-    color: #00ff00; /* Classic hacker green */
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;  /* Light background for a professional, clean look */
+    color: #333;  /* Dark text for good readability */
+    font-family: 'Arial', sans-serif;  /* Clean, modern font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -20,7 +20,7 @@ body {
     background-image: url('https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg');
     background-size: cover;
     background-position: center;
-    color: #00ff00;
+    color: #fff;  /* White text for contrast */
     padding: 150px 20px;
     text-align: center;
     height: 100vh;
@@ -31,165 +31,146 @@ body {
 }
 
 #hero h1 {
-    font-size: 4rem;
-    color: #00ff00;
+    font-size: 3rem;
+    color: #fff;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    font-weight: bold;
 }
 
 #hero p {
-    font-size: 1.5rem;
-    color: #b4b4b4;
+    font-size: 1.3rem;
+    color: #f4f4f4;
     margin-bottom: 30px;
 }
 
 .btn-scroll {
-    background-color: #00ff00;
-    color: black;
+    background-color: #007bff;  /* Professional blue color */
+    color: white;
     padding: 12px 25px;
-    font-size: 1.2rem;
-    border-radius: 8px;
+    font-size: 1.1rem;
+    border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-scroll:hover {
-    background-color: #ff00ff;
-    transform: scale(1.1);
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: scale(1.05);
 }
 
 /* About Me Section */
 #about {
-    background-color: #0f0f0f;
-    color: #00ff00;
-    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 80px 20px;
     text-align: center;
-    border-top: 2px solid #00ff00;
+    border-top: 1px solid #ddd;
 }
 
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #00ff00;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    color: #007bff;  /* Professional blue for headings */
+    font-weight: bold;
 }
 
 #about p {
     font-size: 1.1rem;
-    color: #b4b4b4;
+    color: #555;  /* Slightly lighter text for paragraph */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Projects Section */
 .projects {
     padding: 50px 20px;
+    background-color: #f9f9f9;
     text-align: center;
-    background-color: #0f0f0f;
-    border-top: 2px solid #00ff00;
 }
 
 .projects h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #00ff00;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    color: #007bff;  /* Professional blue for headings */
+    font-weight: bold;
 }
 
 /* Project Cards */
 .project-card {
-    background-color: #1a1a1a;
+    background-color: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
-    border: 2px solid #333;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);  /* Soft shadow for a clean, professional look */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
 
-.project-card::before {
-    content: 'HACKING...';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 1rem;
-    color: #00ff00;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.7;
-}
-
-/* Hover Effects for Project Cards */
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.3);  /* Subtle blue glow on hover */
 }
 
 .project-card h3 {
     font-size: 1.8rem;
-    color: #00ff00;
+    color: #333;
     margin-bottom: 10px;
     font-weight: bold;
-    text-shadow: 0 0 10px #00ff00;
 }
 
 .project-card h3 a {
-    color: #00ff00;
+    color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-card h3 a:hover {
-    color: #ff00ff;
+    color: #0056b3;  /* Darker blue on hover */
 }
 
-/* Project Description */
 .project-card p {
     font-size: 1.1rem;
-    color: #b4b4b4;
+    color: #555;
 }
 
 /* View Project Button */
 .view-project-btn {
-    background-color: #00ff00;
-    color: black;
+    background-color: #007bff;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 5px;
+    font-size: 1.1rem;
     font-weight: bold;
-    font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .view-project-btn:hover {
-    background-color: #ff00ff;
+    background-color: #0056b3;
 }
 
 /* Contact Me Section */
 #contact {
-    background-color: #0f0f0f;
-    color: #00ff00;
+    background-color: #fff;
+    color: #333;
     padding: 50px 20px;
     text-align: center;
-    border-top: 2px solid #00ff00;
+    border-top: 1px solid #ddd;
 }
 
 #contact h2 {
     font-size: 2.5rem;
-    color: #00ff00;
+    color: #007bff;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 #contact p {
     font-size: 1.1rem;
-    color: #b4b4b4;
+    color: #555;
     margin-bottom: 20px;
 }
 
@@ -198,11 +179,11 @@ body {
     display: inline-block;
     width: 100%;
     max-width: 600px;
-    background-color: #1a1a1a;
+    background-color: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
-    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
 }
 
 .contact-form input,
@@ -210,19 +191,19 @@ body {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    background-color: #0f0f0f;
-    color: #00ff00;
-    border: 2px solid #00ff00;
-    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border: 2px solid #ff00ff;
-    box-shadow: 0 0 10px #ff00ff;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
     outline: none;
 }
 
@@ -230,11 +211,11 @@ body {
 .contact-form button {
     width: 100%;
     padding: 14px;
-    background-color: #00ff00;
-    color: #000;
+    background-color: #007bff;
+    color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 1.2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -242,10 +223,8 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #ff00ff;
-    color: white;
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+    background-color: #0056b3;
+    transform: translateY(-3px);
 }
 
 /* Social Media Links */
@@ -254,15 +233,32 @@ body {
     margin: 10px;
     padding: 15px;
     font-size: 1.8rem;
-    color: #00ff00;
-    background-color: #1a1a1a;
+    color: #007bff;
+    background-color: #f9f9f9;
     border-radius: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .contact-social a:hover {
-    background-color: #00ff00;
-    color: black;
+    background-color: #007bff;
+    color: white;
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
