@@ -73,18 +73,22 @@
         }
 
         .btn-scroll {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 12px 25px;
+            display: inline-block;
+            background-color: #007bff; /* Same blue color as "View Project" */
+            color: #fff;
+            padding: 12px 25px; /* Comfortable padding */
             border-radius: 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500; /* Slightly bold text */
+            transition: all 0.3s ease; /* Smooth hover transition */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
 
         .btn-scroll:hover {
-            background-color: var(--secondary-color);
-            transform: scale(1.1);
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+            transform: translateY(-3px); /* Lift effect */
         }
 
         /* About Section */
