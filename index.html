@@ -241,6 +241,19 @@
     </style>
 </head>
 <body>
+    <script>
+        document.querySelector('.btn-scroll').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default jump
+            const targetId = this.getAttribute('href'); // Get the target section ID
+            const targetElement = document.querySelector(targetId);
+    
+            // Smoothly scroll to the target section
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        });
+    </script>
     <header id="hero">
         <h1>Welcome to Min Tun Tun Naing's Portfolio</h1>
         <p>Explore my projects and learn more about my work.</p>
