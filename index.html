@@ -136,19 +136,24 @@
         }
 
         .view-project-btn {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 10px 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
             border-radius: 30px;
-            font-weight: bold;
+            font-size: 1rem;
+            font-weight: 600;
+            display: inline-block;
             transition: all 0.3s ease;
-        }
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+        } 
 
         .view-project-btn:hover {
-            background-color: var(--secondary-color);
-            transform: scale(1.05);
+            background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+            transform: scale(1.05); /* Slight zoom on hover */
+            cursor: pointer;
         }
-
         /* Contact Section */
         #contact {
             padding: 60px 20px;
