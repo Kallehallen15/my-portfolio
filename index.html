@@ -207,6 +207,16 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .profile-pic {
+            width: 150px; /* Adjust the size as needed */
+            height: 150px;
+            border-radius: 50%; /* Makes it a circle */
+            margin: 20px auto; /* Centers the image */
+            display: block;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for aesthetics */
+        }
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -229,9 +239,10 @@
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate developer specializing in web development, automation, and embedded systems. Below are some of my notable projects.</p>
-        </section>
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="Min Tun Tun Naing" class="profile-pic">
+    <p>I am a passionate developer specializing in web development, automation, and embedded systems. Below are some of my notable projects.</p>
+</section>
 
         <section class="projects" id="projects">
             <h2>My Projects</h2>
